@@ -112,7 +112,7 @@ footer {
     line-height: 1;
     color: #00C040;
     font-weight: 700;
-    position: fixed; }
+    position:absolute; }
     .nav-global .navbar-brand i {
       font-size: 20px; }
   .nav-global .img-brand {
