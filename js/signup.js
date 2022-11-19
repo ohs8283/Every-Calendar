@@ -10,6 +10,15 @@ confrimPassword.addEventListener('keyup', isSameCheck);
 inputUserName.addEventListener('keyup', nameCheck);
 inputUserNickname.addEventListener('keyup', nicknameCheck);
 
+function NoMultiChk(chk){
+    var obj = document.getElementsByName("overlap");
+    for(var i=0; i<obj.length; i++){
+    if(obj[i] != chk){
+        obj[i].checked = false;
+    }
+    }
+}
+
 function idCheck() {
     let userIdLength = inputUserId.value.length;
     if (userIdLength >= 6 && userIdLength <= 16) {
