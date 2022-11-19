@@ -12,11 +12,11 @@ inputUserNickname.addEventListener('keyup', nicknameCheck);
 
 function idCheck() {
     let userIdLength = inputUserId.value.length;
-    if (userIdLength >= 8 && userIdLength <= 16) {
+    if (userIdLength >= 6 && userIdLength <= 16) {
         document.querySelector('.validator.userId').innerHTML = `유효합니다.`;
         document.querySelector('.userId').style.color = `#00C040`;
     } else {
-        document.querySelector('.validator.userId').innerHTML = `아이디는 8자리이상 이어야합니다.`;
+        document.querySelector('.validator.userId').innerHTML = `아이디는 6자리이상 이어야합니다.`;
         document.querySelector('.userId').style.color = `rgba(233 50 35)`;
     }
 }
