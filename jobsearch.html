@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/jobopening.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <title>구직게시글</title>
+</head>
+
+<body>
+  <div id="page">
+    <span class="slide">
+      <span id="header">
+          <a href="javascript:history.back();" class="backBtn"><i id="backIcon"
+                  class="fas fa-chevron-left"></i></a>
+      </span>
+      <h1>구직게시판</h1>
+      <a href="#" onclick="openSlideMenu()">
+          <i class="fas fa-bars" id="menuIcon"></i>
+      </a>
+  </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()" style="padding: 20px 30px;">
+          <span class="material-icons">close</span>
+      </a>
+      <div>
+      <label class="homeUserName"></label><label>님</label>
+      </div>
+      <div class="sideBarLinkBox"> 
+          <img id="mypageIcon" src="../Icons/user (2).png">
+          <a href="../myPage/myPage.html">마이페이지</a>
+      </div>
+      <div class="sideBarLinkBox">
+          <img id="offerBoardIcon" src="../Icons/look-for (3).png">
+          <a href="../bulletinBoard/jobOfferBoard.html">구인게시판</a>
+      </div>
+      <div class="sideBarLinkBox">
+          <img id="searchBoardIcon" src="../Icons/search (2).png">
+          <a href="../bulletinBoard/jobSearchBoard.html">구직게시판</a>
+      </div>
+      <div style="padding:13px;"></div>
+      <a id="logoutBtn" style="font-size: 21px;">Logout</a><br>
+      <a href="../userGuidePage/userGuidePage.html"><img src="../Icons/question.png" style="width: 25px; height: 25px; margin-top: 10px;"></a>
+  </div>
+  </div>
+
+
+
+  <div id="content">
+    <div class="writingContainer">
+      <label id=postLabel><b>구직게시글</b></label>
+
+      <input id="titlebox" type="text" placeholder="제목"><br>
+      <textarea name="contentbox" id="contentbox" cols="30" rows="10" placeholder="본문"></textarea><br>
+
+      <div id="infobox">
+        <label>성별</label>
+        <input type="radio" name="userGender" value="남" class=Genderinput> <label class=GenderinputLabel>남</label>
+        <input type="radio" name="userGender" value="여" class=Genderinput> <label class=GenderinputLabel>여</label><br>
+
+       
+        
+        <label>지역</label> <select name="area" id="area" size="1">
+          <option value="서울">서울</option>
+          <option value="경기">경기</option>
+          <option value="인천">인천</option>
+          <option value="강원">강원</option>
+          <option value="대전">대전</option>
+          <option value="세종">세종</option>
+          <option value="충남">충남</option>
+          <option value="충북">충북</option>
+          <option value="부산">부산</option>
+          <option value="울산">울산</option>
+          <option value="경남">경남</option>
+          <option value="경북">경북</option>
+          <option value="대구">대구</option>
+          <option value="광주">광주</option>
+          <option value="전남">전남</option>
+          <option value="전북">전북</option>
+          <option value="제주">제주</option>
+          <option value="전국">전국</option>
+        </select><br>
+        <label>선호시작일</label><input type="date" id="workStart"><br>
+        <label>선호마감일</label><input type="date" id="workEnd"><br>
+      <label>시급</label> <input type="text" id="pay" value="최저시급"> <label id=payLabel>원</label><br>
+        
+      </div>
+      <button id="saveBtn">기모딱!</button><br>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<!-- update the version number as needed -->
+<script src="../__/firebase/8.6.5/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script src="../__/firebase/8.6.5/firebase-firestore.js"></script>
+<script src="../__/firebase/8.6.5/firebase-storage.js"></script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+</script>
+<script src="js/jobsearch.js"></script>
+
+</html>
