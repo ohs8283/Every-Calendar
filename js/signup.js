@@ -2,12 +2,14 @@ const inputUserId = document.getElementById('inputId');
 const inputPassword = document.getElementById('inputPassword');
 const confrimPassword = document.getElementById('confirmPassword');
 const inputUserName = document.getElementById('inputName');
+const inputYear = document.getElementById('inputYear');
 const inputUserNickname = document.getElementById('inputNickname');
 
 inputUserId.addEventListener('keyup', idCheck);
 inputPassword.addEventListener('keyup', passwordCheck);
 confrimPassword.addEventListener('keyup', isSameCheck);
 inputUserName.addEventListener('keyup', nameCheck);
+inputYear.addEventListener('keyup', yearCheck);
 inputUserNickname.addEventListener('keyup', nicknameCheck);
 
 function NoMultiChk(chk){
@@ -62,6 +64,17 @@ function nameCheck() {
         } else {
             document.querySelector('.validator.userName').innerHTML = `올바르지 않습니다.`;
             document.querySelector('.userName').style.color = `rgba(233 50 35)`;
+        }
+}
+
+function yearCheck() {
+    const regYear =  /^[0-9]+$/;
+        if (regYear.test(inputYear.value) === true) {
+            document.querySelector('.validator.userYear').innerHTML = '유효합니다.';
+            document.querySelector('.userYear').style.color = `#00C040`;
+        } else {
+            document.querySelector('.validator.userYear').innerHTML = `올바르지 않습니다.`;
+            document.querySelector('.userYear').style.color = `rgba(233 50 35)`;
         }
 }
 

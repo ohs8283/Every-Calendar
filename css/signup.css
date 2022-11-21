@@ -131,7 +131,8 @@ select {
 
 .btn-light {
   color: #6667ab;
-  background-color: #F7F7FB; }
+  background-color: #F7F7FB;
+}
   .btn-light:hover, .btn-light:active {
     color: #3e3e3e;
     background-color: #FFEADD !important;
@@ -184,6 +185,14 @@ select {
 
 .fixed-top + .container {
   padding-top: 120px; }
+
+.inputBar {
+
+  text-align: center;
+  width: 380px;
+  height: 30px;
+  margin-bottom: 10px;
+}
 
 footer {
   margin-top: 80px;
