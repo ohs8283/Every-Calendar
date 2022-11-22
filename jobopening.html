@@ -1,15 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">href={% static "css/login.css"%}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/jobopening.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href={% static "css/jobopening.css"%}>
+  <link href={% static "https://fonts.googleapis.com/icon?family=Material+Icons"%} rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
   <title>구인게시글</title>
+    <!-- jquery -->
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -86,18 +88,6 @@
       <button id="saveBtn">기모띠</button><br>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-<!-- update the version number as needed -->
-<script src="../__/firebase/8.6.5/firebase-app.js"></script>
-<!-- include only the Firebase features as you need -->
-<script src="../__/firebase/8.6.5/firebase-firestore.js"></script>
-<script src="../__/firebase/8.6.5/firebase-storage.js"></script>
-
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-</script>
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script src="js/jobopening.js"></script>
 
 </html>
