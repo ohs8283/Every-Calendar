@@ -18,17 +18,20 @@ window.onload = function () {
   buildCalendar();
   function buildCalendar() {
     let firstDate = new Date(today.getFullYear(), today.getMonth(), 1);
-    const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthList = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
     const leapYear = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     const notLeapYear = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    const headerYear = document.querySelector('.current-year-month');
+    const headerMonth = document.querySelector('.current-month');
+    const headerYear = document.querySelector('.current-year');
     // 윤년 체크하기
     if (firstDate.getFullYear() % 4 === 0) {
       pageYear = leapYear;
     } else {
       pageYear = notLeapYear;
     }
-    headerYear.innerHTML = `${monthList[firstDate.getMonth()]}&nbsp;&nbsp;&nbsp;&nbsp;${today.getFullYear()}`;
+    headerYear.innerHTML = `${today.getFullYear()}.`;
+    headerMonth.innerHTML = `${monthList[firstDate.getMonth()]}`;
+    
     makeElement(firstDate);
     showMain();
     currentDateget();
