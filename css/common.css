@@ -261,7 +261,7 @@ header > h1 > span {color: #a7a7a7; font-size: 28px; font-weight: 400; vertical-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(255, 38, 179);
+  background: #ff7c7c;
   width: 400px;
   height: 300px;
   z-index: 1;
