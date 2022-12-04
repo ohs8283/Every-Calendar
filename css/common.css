@@ -142,6 +142,7 @@ header > h1 > span {color: #a7a7a7; font-size: 28px; font-weight: 400; vertical-
   color: #fb2c2c;
   display: inline-block;
   margin: 0 20px;
+  background-color: y;
 }
 
 /* content left */
@@ -300,7 +301,7 @@ header > h1 > span {color: #a7a7a7; font-size: 28px; font-weight: 400; vertical-
   transform: translate(-50%, -50%);
   word-break:break-all;
   width: 70%;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
 }
 .createDate {
