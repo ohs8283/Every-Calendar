@@ -1,55 +1,27 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">href={% static "css/login.css"%}
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href={% static "css/jobopening.css"%}>
-  <link href={% static "https://fonts.googleapis.com/icon?family=Material+Icons"%} rel="stylesheet">
+  <link rel="stylesheet" href="css/jobopening.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
   <title>구인게시글</title>
-    <!-- jquery -->
-  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
   <div id="page">
     <span class="slide">
       <span id="header">
-          <a href="javascript:history.back();" class="backBtn"><i id="backIcon"
+          <a href="Calendar.html" class="backBtn"><i id="backIcon"
                   class="fas fa-chevron-left"></i></a>
       </span>
       <h1>구인게시판</h1>
-      <a href="#" onclick="openSlideMenu()">
-          <i class="fas fa-bars" id="menuIcon"></i>
       </a>
   </span>
-
-    <div id="menu" class="nav">
-      <a href="#" class="close" onclick="closeSlideMenu()" style="padding: 20px 30px;">
-          <span class="material-icons">close</span>
-      </a>
-      <div>
-      <label class="homeUserName"></label><label>님</label>
-      </div>
-      <div class="sideBarLinkBox"> 
-          <img id="mypageIcon" src="../Icons/user (2).png">
-          <a href="../myPage/myPage.html">마이페이지</a>
-      </div>
-      <div class="sideBarLinkBox">
-          <img id="offerBoardIcon" src="../Icons/look-for (3).png">
-          <a href="../bulletinBoard/jobOfferBoard.html">구인게시판</a>
-      </div>
-      <div class="sideBarLinkBox">
-          <img id="searchBoardIcon" src="../Icons/search (2).png">
-          <a href="../bulletinBoard/jobSearchBoard.html">구직게시판</a>
-      </div>
-      <div style="padding:13px;"></div>
-      <a id="logoutBtn" style="font-size: 21px;">Logout</a><br>
-      <a href="../userGuidePage/userGuidePage.html"><img src="../Icons/question.png" style="width: 25px; height: 25px; margin-top: 10px;"></a>
-  </div>
   </div>
 
 
@@ -70,24 +42,37 @@
 
         <label>근무시작일</label><input type="date" id="workStart"><br>
         <label>근무마감일</label><input type="date" id="workEnd"><br>
-        <label>게시마감일</label><input type="date" id="postEnd"><br>
-        <label>시급</label> <input type="text" id="pay" value="최저시급"> <label id=payLabel>원</label><br>
+        <label>시급</label> <input type="text" id="pay" placeholder="요청시급"> <label id=payLabel>원</label><br>
         
         <label>지역</label> 
-        <input type="text" id="address_kakao" name="address" readonly />
+      
+          <select name="area" id="area" size="1" class="inputBar">
+              <option value="지역">사는지역</option>
+              <option value="서울">서울</option>
+              <option value="경기">경기</option>
+              <option value="인천">인천</option>
+              <option value="강원">강원</option>
+              <option value="대전">대전</option>
+              <option value="세종">세종</option>
+              <option value="충남">충남</option>
+              <option value="충북">충북</option>
+              <option value="부산">부산</option>
+              <option value="울산">울산</option>
+              <option value="경남">경남</option>
+              <option value="경북">경북</option>
+              <option value="대구">대구</option>
+              <option value="광주">광주</option>
+              <option value="전남">전남</option>
+              <option value="전북">전북</option>
+              <option value="제주">제주</option>
+          </select><br>            
 
-        <div id="payboostbox">
-          <label>마감전 시급인상</label>
-          <input type="radio" class="payboost" name="payboost" value="false" id="false" checked><label class=inputLabel>미사용</label>
-          <input type="radio" class="payboost" name="payboost" value="true" id="true"><label class=inputLabel>사용</label><br>
-          <label>인상율</label>
-          <input type="text" id="increaseRate" name="increaseRate" disabled><label id=rateLabel>%</label><br>
-          <label>적용일 : 마감 D-</label><input type="text" id="deadline" name="deadline" disabled>
-        </div>
-      </div>
-      <button id="saveBtn">기모띠</button><br>
+      
+    <div class="container">
+    <a href="Calendar.html" title="Button fade blue/green" class="button btnFade btnBlueGreen">게시글 올리기</a>
     </div>
 </body>
+
 <script src="js/jobopening.js"></script>
 
 </html>

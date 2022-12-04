@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
 body {
   margin: 0;
   background-color: #f4f2ec;
@@ -32,9 +34,9 @@ body {
   text-align: center;
 }
 #saveBtn {
-  width: 60px;
-  height: 30px;
-  font-size: 12px;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
   font-weight: bolder;
   background-color: #be2623;
   border: none;
@@ -42,11 +44,34 @@ body {
   color: #f4f2ec;
   margin-top: 15px;
 }
+
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 150px;
+  padding: 0;
+  margin: 40px 20px 10px 670px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 10px;
+}
+.btnBlueGreen {
+  background: #eb6f6d;
+}
+.btnFade.btnBlueGreen:hover {
+  background: #ff322e
+}
+
+
 #titlebox {
   width: 80%;
+  height: 40px;
   margin-top: 5px;
 
-  font-size: 15px;
+  font-size: 18px;
   /* margin: 0px; */
   margin-right: 100px;
   margin-bottom: 20px;
@@ -54,9 +79,9 @@ body {
 #contentbox {
   margin-left: 20px;
   width: 80%;
-  height: 250px;
+  height: 230px;
 
-  font-size: 15px;
+  font-size: 20px;
   /* margin: 0px; */
   margin-bottom: 20px;
 }
@@ -102,77 +127,19 @@ select {
 #rateLabel {
   margin-left: 2px;
 }
-#payboostbox {
-  width: 280px;
-  margin-top: 10px;
-  padding: 3px;
-  background-color: #e9e6e6;
-}
-/* 사이드바 */
-.nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #e0dedc;
-  font-size: 30px;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0;
-  text-align: center;
-}
+
 .slide {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: #ff5353;
-  height: 50px;
   margin-left: -25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#menuIcon {
-  color: #fff;
-}
-.nav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-}
-.nav label {
-  font-size: 22px;
-  font-weight: bolder;
-  margin-left: auto;
-  margin-right: auto;
-}
-.nav img {
-  width: 42px;
-  height: 42px;
-  margin-right: -7px;
-  vertical-align: middle;
-  padding-top: 5px;
-}
 
-#mypageIcon {
-  width: 35px;
-  height: 35px;
-  margin-right: 0px;
-  padding-top: 0px;
-}
-.nav div {
-  padding: 20px;
-}
-.nav .close {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  margin-right: 50px;
-  font-size: 30px;
-}
 .slide a {
-  font-size: 32px;
+  font-size: 55px;
   height: 50px;
 }
 #page {
@@ -182,11 +149,11 @@ select {
 }
 
 h1 {
-  margin: 0;
+  margin-right: 600px;
   color: #ffffff;
   /* height: 35px; */
-  vertical-align: middle;
-  padding-top: 5px;
-  font-size: 27px;
+  /* vertical-align: middle; */
+  /* padding-top: 5px; */
+  
 }
 /*사이드바 끝*/

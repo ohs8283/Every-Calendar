@@ -22,9 +22,21 @@
     <span class="current-year"></span>
     <span class="current-month"></span>
     <button class="next">&#62;</button>
-    <button class="logout" style="float:right;"><span>Log Out</span></button>
-    <button class="search" style="float:right;">Hot Time</button>
+    <a href="#" onclick="openSlideMenu()">
+      <i class="fas fa-bars" style= "float:right; margin-top: 15px; margin-right: 50px; font-size: 40px; color:#ff7c7c; ;" id="menuIcon"></i>
+    </a>
   </div>
+  <div id="menu" class="nav">
+    <a href="#" class="close" onclick="closeSlideMenu()" style="padding: 20px 30px;">
+        <span class="material-icons">close</span>
+    </a>
+    <div>
+    <label class="homeUserName"></label><label>님</label>
+    </div>
+
+  <div><button type="button" onclick="location.href='list.html'" class="search" style="float:right;" >Hot Time</button></div>  
+    <div><button type="button" onclick="location.href='LogIn.html'" class="logout" style="float:right;"><span>Log Out</span></button></div> 
+   
 </header>
 <section class="content-left">
   <div class="left-main">
