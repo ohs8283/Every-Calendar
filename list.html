@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href={% static"css/list.css"%}>
+    <script src={% static"https://code.jquery.com/jquery-3.4.1.js"%}></script>
+    <script defer src={% static"js/sale.js"%}></script>
     <!-- <script defer src="js/sale.js"></script>
     <script defer src="js/sale2.js"></script> -->
      <!-- jquery -->
@@ -117,10 +119,54 @@
                                         <li class="b-date"><span>작성일</span>2020-02-01</li>
                                         <li class="b-hit"><span>조회수</span>2043</li>
                                     </ul>
-                                    <div class="button-1">
+
+                                    <!-- <div class="button-1">
                                         <div class="eff-1"></div>
                                         <a href="#"> 지원하기 </a>
+                                    </div>   요 버튼은 hover이용해서 한건데 아직 모달이랑 연결암됨 -->
+
+                                    <!-- 모달시작 -->
+                                    <div class="container">
+                                        <div class="modal-btn-box">
+                                        <button type="button" id="modal-open"style="color:#ff3737;">지원하기</button>  
+                                        </div>
+                                        
+                                        <div class="popup-wrap" id="popup">
+                                          <div class="popup">
+                                            <div class="popup-head">
+                                                <span class="head-title">
+                                                  메가커피 시내점</span>
+                                            </div>
+                                            <div class="popup-body">
+                                              <div class="body-content">
+                                                <div class="body-titlebox">
+                                                  <h2>근무조건</h2>
+                                                </div>
+                                                <div class="body-contentbox">
+                                                  <p><b>주요업무</b> 걍 커피 존나 타느거임 ㅋ</p>
+                                                
+                                                <p>
+                                                  <b>급여</b> 10000원 
+                                                </p>
+                                                <p>
+                                                <b>근무요일</b> 응 평생이야
+                                                </p>
+                                                <p>
+                                                    <b>근무시간</b> 09:00~24:00
+                                                    </p>
+                                                </div>
+                                                
+                                                
+                                              </div>
+                                            </div>
+                                            <div class="popup-foot">
+                                              <span class="pop-btn confirm" href="Calender.html" id="confirm">지원하기</span>
+                                              <span class="pop-btn close" id="close">창 닫기</span>
+                                            </div>
+                                          </div>
                                       </div>
+                                      </div>
+                                      <!-- 모달끝 -->
                                 </div>
                                 <div class="b-box03"><a href="#a" title="첨부파일 다운로드"><img src={% static"img/ico-file01.gif"%} alt="첨부파일" /></a></div>
                             </li>
