@@ -102,13 +102,14 @@ header > h1 > span {color: #a7a7a7; font-size: 28px; font-weight: 400; vertical-
   color:#fff;
   border:none;
   position:relative;
-  font-weight: 500;
+  font-weight: 550;
   width: 220px;
   font-size:25px;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+  margin-bottom: 40px;
   
 }
 .nav .search:hover{
@@ -147,11 +148,11 @@ header > h1 > span {color: #a7a7a7; font-size: 28px; font-weight: 400; vertical-
   overflow: hidden;
   position: relative;
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 19px;
   background-color: #ff7c7c;
   padding: 17px 60px;
-  margin-top: 30px;
+  margin-top: 1px;
   box-shadow: 0 5px 15px rgba(243, 226, 226, 0.2);
 }
 
