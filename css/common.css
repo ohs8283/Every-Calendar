@@ -191,17 +191,8 @@ h1 {
   padding-top: 5px;
   font-size: 29px;
 }
-
-.calendar_title .current-month {
-  font-size: 40px;
-  vertical-align: middle;
-  color: #fb2c2c;
-  display: inline-block;
-  /* margin: 0 20px; */
-  margin-right: 20px;
-}
-.calendar_title .current-year {
-  font-size: 40px;
+.calendar_title .current-year-month {
+  font-size: 30px;
   vertical-align: middle;
   color: #fb2c2c;
   display: inline-block;
